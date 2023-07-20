@@ -8,6 +8,8 @@
 
       body {
           background-color: #080710;
+          max-width: 1920px;
+          margin: auto;
       }
 
       .login__background {
@@ -41,7 +43,7 @@
           bottom: -80px;
       }
 
-      form {
+      .auth__form {
           height: 520px;
           width: 400px;
           background-color: rgba(255, 255, 255, 0.13);
@@ -56,7 +58,7 @@
           padding: 50px 35px;
       }
 
-      form * {
+      .auth__form * {
           font-family: 'Poppins', sans-serif;
           color: #ffffff;
           letter-spacing: 0.5px;
@@ -64,21 +66,21 @@
           border: none;
       }
 
-      form h3 {
-          font-size: 32px;
+      .auth__form h3 {
+          font-size: 25px;
           font-weight: 500;
-          line-height: 42px;
           text-align: center;
+          direction: rtl;
       }
 
-      label {
+      .auth__label {
           display: block;
           margin-top: 30px;
           font-size: 16px;
           font-weight: 500;
       }
 
-      input {
+      .auth__input {
           display: block;
           height: 50px;
           width: 100%;

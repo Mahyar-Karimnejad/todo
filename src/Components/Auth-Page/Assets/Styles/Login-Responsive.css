@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+    .auth__form h3 {
+        font-size: 18px;
+    }
+
+    .auth__input {
+        font-size: 13px;
+    }
+
+    .auth__label {
+        font-size: 14px;
+    }
+
+    .login__background,
+    .auth__form {
+        width: 90%;
+        margin: auto;
+    }
+
+    .login__background .shape {
+       display: none;
+    }
+
+}
+
+@media (min-width: 769px) and (max-width: 1054px) {}
