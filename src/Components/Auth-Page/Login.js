@@ -4,7 +4,7 @@ import { useNavigate, Link } from 'react-router-dom';
 // Styles Import
 import './Assets/Styles/Login.css'
 import './Assets/Styles/Login-Responsive.css'
-function Auth() {
+function Login() {
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
     const navigate = useNavigate();
@@ -59,14 +59,17 @@ function Auth() {
                 <div class="shape"></div>
             </div>
             <div className="auth__form">
-                <h3>زندگی را مدیریت کن، روی آرزوها کار کن!</h3>
+                <h3>برنامه‌ریزی هوشمند، زندگی پرانرژی!</h3>
                 <label className="auth__label" for="username">Username</label>
-                <input className="auth__input" type="text" placeholder="Email or Phone" id="username"value={email} onChange={(e) => setEmail(e.target.value)} required  />
+                <input className="auth__input" type="text" placeholder="Email or Phone" id="username" value={email} onChange={(e) => setEmail(e.target.value)} required />
 
                 <label className="auth__label" for="password">Password</label>
-                <input className="auth__input" type="password" placeholder="Password" id="password"value={password} onChange={(e) => setPassword(e.target.value)} required  />
+                <input className="auth__input" type="password" placeholder="Password" id="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
 
-                <button onClick={Login} style={{ color: "black" }}>وارد شوید</button>
+                <button className="auth__button" onClick={Login} style={{ color: "black" }}>وارد شوید</button>
+                <div className="sighn-up-page">
+                    <a href="/register">ثبت نام کنید.</a>
+                </div>
                 <div class="social">
                     <div class="go"><i class="fab fa-google"></i>  Google</div>
                     <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
@@ -76,4 +79,4 @@ function Auth() {
     );
 }
 
-export default Auth;
+export default Login;
