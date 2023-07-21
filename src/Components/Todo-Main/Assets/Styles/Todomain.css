@@ -8,6 +8,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     position: relative;
+    min-height: 100vh;
 }
 
 .empty__style {
@@ -24,7 +25,7 @@
 
 .todo__lists {
     width: 36%;
-    border: 1px solid black;
+    border: 1px solid rgb(168, 168, 168);
     box-shadow: 0 0 5px gray;
     border-radius: 8px;
     margin: 10px;
@@ -37,12 +38,13 @@
     width: 63.5%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: 1px solid black;
+    border: 1px solid rgb(168, 168, 168);
     box-shadow: 0 0 5px gray;
     border-radius: 8px;
     margin: 10px;
-
+    justify-content: space-evenly;
+    height: 98vh;
+    overflow-y: scroll;
 }
 
 .todo__list__item {
@@ -52,11 +54,8 @@
     border: 1px solid transparent;
     transition: all 0.3s ease;
     background: #f0f0f0;
-    /* پس‌زمینه با رنگ خاکستری روشن */
     border-radius: 8px;
-    /* گوشه‌گیری روی border */
     opacity: 0.9;
-    /* تنظیم شفافیت */
 }
 
 .todo__list__item:hover {
@@ -101,3 +100,99 @@
         box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
     }
 }
+
+.todo__tasks__sty {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.todo__tasks__sty label {
+    border: 1px solid rgb(153, 153, 153);
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 5px;
+    transition: 0.16s all linear;
+    background-color: rgb(2, 236, 2);
+}
+
+.todo__tasks__sty label:hover {
+    box-shadow: 0 0 5px gray;
+}
+
+.todo__lists__styles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+}
+
+.todo__tasks__infos {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(170, 170, 170);
+    box-shadow: 0 0 5px gray;
+    width: 100%;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.todo__tasks__infos button {
+    width: 30%;
+    height: 50px;
+    cursor: pointer;
+    border: blue;
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.todo__tasks__name {
+    width: 100%;
+    text-align: right;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.todo__tasks__name label {
+    color: gray;
+}
+
+.todo__tasks__name p {
+    color: black;
+    font-weight: bold;
+}
+
+.todo__tasks__date {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.todo__tasks__date p {
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: gray;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 5px gray;
+}
+
+.todo__tasks__items__info {
+    width: 100%;
+    text-align: right;
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+/* Admin Todo List */
